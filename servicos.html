@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Serviços | Bombox Vidraçaria</title>
+
+  <!-- Fontes Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- Estilo principal -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- 🔝 Cabeçalho -->
+    <header>
+      <div class="header-bar">
+        <div class="logo-img">
+          <img src="imag/logo-bombox.png" alt="Logo Bombox Vidraçaria" />
+        </div>
+
+        <nav id="nav">
+          <a href="index.html">Início</a>
+          <a href="servicos.html" class="active">Serviços</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="btn" onclick="window.location.href='tel:+5514981490566'">Ligar</button>
+          <div class="menu-toggle" id="menu-toggle">☰</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 🌟 HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1><span class="amarelo">Conheça</span> nossos serviços</h1>
+        <p>Soluções em vidro e alumínio sob medida para cada projeto. Qualidade, segurança e sofisticação.</p>
+        <button class="btn" onclick="window.open('https://wa.me/5514981490566?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento.', '_blank')">
+          Solicitar orçamento
+        </button>
+      </div>
+      <div class="hero-img">
+        <img src="imag/portas/servico.png" alt="Serviços em destaque" />
+      </div>
+    </section>
+
+    <!-- 🗂️ Catálogo -->
+    <section class="catalogo-servicos">
+      <h2 class="amarelo">Catálogo Bombox</h2>
+      <p class="intro">
+        Soluções em vidro e alumínio sob medida com sofisticação e segurança. Escolha o serviço ideal para seu projeto!
+      </p>
+      <div class="catalogo-grid">
+
+        <div class="card">
+          <img src="imag/box/icone-box.png" alt="Box de Banheiro">
+          <h3>Box de Banheiro</h3>
+          <p>Instalação de box temperado com perfis sob medida e alto padrão estético.</p>
+          <button class="btn ver-mais" onclick="abrirGaleria('box')">Ver mais</button>
+        </div>
+
+        <div class="card">
+          <img src="imag/portas/icone-porta.png" alt="Portas de Vidro">
+          <h3>Portas de Vidro</h3>
+          <p>Modelos pivotantes, de correr e articuladas com vidro laminado ou fumê.</p>
+          <button class="btn ver-mais" onclick="abrirGaleria('porta-de-vidro')">Ver mais</button>
+        </div>
+
+        <div class="card">
+          <img src="imag/janelas/icone-janela.png" alt="Janelas de Alumínio">
+          <h3>Janelas</h3>
+          <p>Com esquadrias reforçadas e vidro para ambientes internos e externos.</p>
+          <button class="btn ver-mais" onclick="abrirGaleria('janelas')">Ver mais</button>
+        </div>
+
+        <div class="card">
+          <img src="imag/fechamentos-e-fachadas/icone-fechamento.png" alt="Fechamentos e Fachadas">
+          <h3>Fechamentos e Fachadas</h3>
+          <p>Soluções em alumínio para pias, varandas, áreas externas e comerciais.</p>
+          <button class="btn ver-mais" onclick="abrirGaleria('fachadas')">Ver mais</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 🖼️ Galerias -->
+    <section id="galeria-box" class="galeria">
+      <span class="fechar" onclick="fecharGaleria('box')">&times;</span>
+      <div class="slider">
+        <div class="slide ativo"><img src="imag/box/box-tamanho-padrao.png" alt=""><div class="legenda">Box padrão</div></div>
+        <div class="slide"><img src="imag/box/box-fora-do-padrao.png" alt=""><div class="legenda">Box personalizado</div></div>
+        <div class="slide"><img src="imag/box/divisoria-de-box.png" alt=""><div class="legenda">Divisória</div></div>
+        <div class="slide"><img src="imag/box/divisoria-de-box-2.png" alt=""><div class="legenda">Divisória de box</div></div>
+        <div class="slide"><img src="imag/box/box.png" alt=""><div class="legenda">Box de banheiro</div></div>
+      </div>
+      <button class="seta-esquerda">❮</button>
+      <button class="seta-direita">❯</button>
+    </section>
+
+    <section id="galeria-porta-de-vidro" class="galeria">
+      <span class="fechar" onclick="fecharGaleria('porta-de-vidro')">&times;</span>
+      <div class="slider">
+        <div class="slide ativo"><img src="imag/portas/porta-de-correr.png" alt=""><div class="legenda">Porta de correr</div></div>
+        <div class="slide"><img src="imag/portas/porta-quatro-folhas.png" alt=""><div class="legenda">Porta com 4 folhas</div></div>
+        <div class="slide"><img src="imag/portas/porta-de-abrir-2.png" alt=""><div class="legenda">Porta de abrir</div></div>
+        <div class="slide"><img src="imag/portas/porta-duas-folhas.png" alt=""><div class="legenda">Porta com 2 folhas</div></div>
+      </div>
+      <button class="seta-esquerda">❮</button>
+      <button class="seta-direita">❯</button>
+    </section>
+
+    <section id="galeria-janelas" class="galeria">
+      <span class="fechar" onclick="fecharGaleria('janelas')">&times;</span>
+      <div class="slider">
+        <div class="slide ativo"><img src="imag/janelas/janela-duas-folhas.png" alt=""><div class="legenda">Janela duas folhas</div></div>
+        <div class="slide"><img src="imag/janelas/janela-maquiciar.png" alt=""><div class="legenda">Janela maquiciar</div></div>
+        <div class="slide"><img src="imag/janelas/tres-janelas-duas-folhas.png" alt=""><div class="legenda">Conjunto de três janelas com duas folhas </div></div>
+        <div class="slide"><img src="imag/janelas/janelas.png" alt=""><div class="legenda">Janela padrão</div></div>
+      </div>
+      <button class="seta-esquerda">❮</button>
+      <button class="seta-direita">❯</button>
+    </section>
+
+    <section id="galeria-fachadas" class="galeria">
+      <span class="fechar" onclick="fecharGaleria('fachadas')">&times;</span>
+      <div class="slider">
+        <div class="slide ativo"><img src="imag/fechamentos-e-fachadas/fechamento.png" alt=""><div class="legenda">Porta da casa do gás</div></div>
+        <div class="slide"><img src="imag/fechamentos-e-fachadas/icone-fechamento.png" alt=""><div class="legenda">Fechamento de pia</div></div>
+        <div class="slide"><img src="imag/fechamentos-e-fachadas/portao.png" alt=""><div class="legenda">Portão</div></div>
+      </div>
+      <button class="seta-esquerda">❮</button>
+      <button class="seta-direita">❯</button>
+    </section>
+
+    <!-- 📞 Contato -->
+    <section class="contato">
+      <h2 class="amarelo">FALE COM A BOMBOX</h2>
+            <p>Solicite um orçamento ou tire suas dúvidas com nossa equipe técnica.</p>
+      <div class="telefone">
+        <span>📱</span>
+        <strong>(14) 98149-0566</strong>
+      </div>
+    </section>
+
+  </div> <!-- Fim da div.container -->
+
+  <!-- 💬 WhatsApp Flutuante -->
+  <a href="https://wa.me/5514981490566" class="whatsapp-float" target="_blank" aria-label="Fale conosco pelo WhatsApp">
+    <img src="imag/whatsapp1.png" alt="WhatsApp" />
+  </a>
+
+  <!-- 📜 JS -->
+  <script src="script.js"></script>
+</body>
+</html>

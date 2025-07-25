@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BOMBOX Vidraçaria</title>
+
+  <!-- Importa fontes do Google para textos e títulos -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- Arquivo principal de estilos -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Container principal centralizado -->
+  <div class="container">
+
+    <!-- ===== Cabeçalho do site com logo, menu e botão ===== -->
+    <header>
+      <div class="header-bar">
+        <!-- Logo da empresa -->
+        <div class="logo-img">
+          <img src="imag/logo-bombox.png" alt="Logo da Bombox" />
+        </div>
+
+        <!-- Menu de navegação -->
+        <nav id="nav" aria-label="Menu principal">
+          <a href="index.html">Início</a>
+          <a href="servicos.html">Serviços</a>
+        </nav>
+
+        <!-- Botão de ação + botão do menu mobile -->
+        <div class="header-actions">
+          <button class="btn" onclick="window.location.href='tel:+5514981490566'">Ligar</button>
+          <div class="menu-toggle" id="menu-toggle">☰</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===== Seção de destaque com chamada principal ===== -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>
+          <span class="azul">SOLUÇÕES EM</span>
+          <span class="amarelo">VIDROS E ALUMÍNIO</span>
+        </h1>
+        <p>Excelência em projetos com acabamento impecável e segurança garantida.</p>
+        <button class="btn">Entre em contato</button>
+      </div>
+      <!-- Imagem de destaque lateral -->
+      <div class="hero-img">
+        <img src="imag/portas/porta.png" alt="Porta de vidro deslizante" />
+      </div>
+    </section>
+
+    <!-- ===== Seção Sobre Nós com imagem e texto ===== -->
+    <section class="sobre">
+      <h2 class="amarelo">SOBRE NÓS</h2>
+      <div class="sobre-conteudo">
+        <div class="sobre-texto">
+          <p>
+            Atuamos há mais de 10 anos no mercado de vidraçaria e alumínio com soluções modernas e personalizadas.
+          </p>
+        </div>
+        <div class="sobre-img">
+          <img src="imag/portas/portas.png" alt="Porta de três folhas em vidro" />
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== Catálogo de serviços com ícones ===== -->
+    <section class="catalogo">
+      <div class="container">
+        <h2>NOSSOS SERVIÇOS</h2>
+        <div class="catalogo-grid">
+          <!-- Card 1: Portas -->
+          <div class="card">
+            <img src="imag/portas/icone-porta.png" alt="Ícone de porta" />
+            <h3>Portas</h3>
+            <p>Vidro temperado com estrutura de alumínio.</p>
+          </div>
+          <!-- Card 2: Janelas -->
+          <div class="card">
+            <img src="imag/janelas/icone-janela.png" alt="Ícone de janela" />
+            <h3>Janelas</h3>
+            <p>Modelos sob medida com vidro especial.</p>
+          </div>
+          <!-- Card 3: Box -->
+          <div class="card">
+            <img src="imag/icone/icone-box.png" alt="Ícone de box" />
+            <h3>Instalação de Box</h3>
+            <p>Perfis reforçados para segurança e durabilidade.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Seção de contato com telefone ===== -->
+    <section class="contato">
+      <h2 class="amarelo">CONTATO</h2>
+      <p>
+        Fale com nossa equipe para tirar dúvidas, solicitar um orçamento ou agendar uma visita técnica.
+      </p>
+      <div class="telefone">
+        <span>📱</span>
+        <strong>(14) 98149-0566</strong>
+      </div>
+    </section>
+  </div>
+
+  <!-- ===== Botão flutuante do WhatsApp fixado ===== -->
+  <a href="https://wa.me/5514981490566" class="whatsapp-float" target="_blank" aria-label="WhatsApp Bombox">
+    <img src="imag/whatsapp1.png" alt="Ícone WhatsApp" />
+  </a>
+
+  <!-- ===== Arquivo de JavaScript externo (menu e carrossel) ===== -->
+  <script src="script.js"></script>
+
+</body>
+</html>
